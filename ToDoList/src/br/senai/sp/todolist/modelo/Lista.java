@@ -17,7 +17,7 @@ public class Lista {
 	private Long id;
 	@Column(length=100)
 	private String titulo;
-	@OneToMany(mappedBy="Lista",cascade=CascadeType.ALL, orphanRemoval=true)
+	@OneToMany(mappedBy="lista",cascade=CascadeType.ALL, orphanRemoval=true)
 	private List<ItemLista> itens;
 	
 	
