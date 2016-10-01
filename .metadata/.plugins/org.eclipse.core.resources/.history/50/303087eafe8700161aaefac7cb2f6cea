@@ -1,0 +1,15 @@
+package br.senai.sp.todolist.modelo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UsuarioRestController {
+	@Autowired
+	UsuarioDao UsuarioDao;
+	
+	@RequestMapping (value="/usuario", method = RequestMethod.POST, consumes = MedialType.APPLICATION_JSON_UTF8_VALUE)
+	public R
+
+}
